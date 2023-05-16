@@ -1,0 +1,16 @@
+ while (j <= right) {
+            temp[k] = array[j];
+            j++;
+            k++;
+        }
+
+        for (int x = left; x <= right; x++) {
+            array[x] = temp[x - left];
+        }
+    }
+
+    public static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
